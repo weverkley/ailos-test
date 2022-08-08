@@ -1,0 +1,43 @@
+ailos-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ailos-header {
+  position: absolute;
+  top: 0;
+  left: 85px;
+}
+
+.layout-content {
+  position: absolute;
+  top: 100px;
+  left: 85px;
+  overflow: auto;
+  min-width: calc(100vw - 85px);
+  min-height: calc(100vh - 100px);
+  background-color: #e7eef1;
+  padding: 20px;
+
+  h1,
+  h2,
+  h3 {
+    font-family: inherit !important;
+    font-weight: 400 !important;
+  }
+  span {
+    color: #889499;
+  }
+}
+
+.sidebar-opened {
+  ailos-header {
+    left: 280px !important;
+  }
+
+  .layout-content {
+    left: 280px !important;
+    min-width: calc(100vw - 280px) !important;
+  }
+}

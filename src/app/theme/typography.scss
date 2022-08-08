@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Exo2;
+  src: url("../../assets/fonts/Exo2-Regular.ttf");
+  font-weight: 400;
+}
+
+// Global typography
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Exo2";
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Exo2";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Exo2";
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}

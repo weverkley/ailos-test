@@ -1,0 +1,7 @@
+<main [ngClass]="{'sidebar-opened': opened}">
+  <ailos-sidebar (sidebarOpened)="sidebarOpened($event)"></ailos-sidebar>
+  <ailos-header [sidebarOpened]="opened"></ailos-header>
+  <div class="layout-content">
+    <router-outlet></router-outlet>
+  </div>
+</main>

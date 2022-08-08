@@ -1,0 +1,54 @@
+<div class="sidebar-wrapper" [ngClass]="{'sidebar-opened': opened}">
+  <div class="sidebar-brand">
+    <span *ngIf="!opened"><img src="assets/images/brand-ailos-70x70.svg" alt="Ailos"></span>
+    <span *ngIf="opened"><img src="assets/images/logo-ailos-174x70.svg" alt="Ailos"></span>
+  </div>
+  <div class="sidebar-menu">
+    <div class="sidebar-toggle">
+      <a (click)="toggleSidebar($event)">
+        <fa-icon [icon]="['fas','bars']"></fa-icon>
+      </a>
+    </div>
+    <ul>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['fas','magnifying-glass']"></fa-icon>
+          <span class="item-text">
+            <input type="text" class="form-control" placeholder="Buscar item"
+              style="border-radius: 0px; max-width: 175px;">
+          </span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['fas','home']"></fa-icon>
+          <span class="item-text">Tela inicial</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['far','star']"></fa-icon>
+          <span class="item-text">Favoritos</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['far','comment-dots']"></fa-icon>
+          <span class="item-text">Atendimentos</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['fas','list']"></fa-icon>
+          <span class="item-text">Cadastro</span>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="dashboard.html">
+          <fa-icon [icon]="['fas','building-columns']"></fa-icon>
+          <span class="item-text">Rotinas</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
